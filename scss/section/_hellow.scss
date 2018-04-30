@@ -11,23 +11,25 @@
     align-items:center;
     padding: 10px;
 }
+.header__logo{
+    padding-top: 13px;
+}
 .logo{
     padding-top: 13px;
-    margin-left: 79px
+    margin-left: 50px;
 }
 .header__menu{
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    
+    margin: 20px;
 }
 .nav{
     font-family: 'Ubuntu';
-    
 }
 .nav__list{
-    margin: 0;
-    padding: 0;
+    margin: 2px;
+    
 }
 .nav__item {
     display: inline-block;
@@ -51,10 +53,11 @@
     content: "\2022";
     margin: 13px;
     color: $link;
-    font-size: 20px;
+    font-size: 15px;
+    
 }
 .nav__item:first-child::before {
-   Display: none 
+   display: none 
 } 
 .hellow__content{
     display: flex;
@@ -66,15 +69,26 @@
 .hellow__slogan{
     padding: 11px;
 }
+
 .title{
     font-size: 72px;
     font-family: 'Gagalin';
     color: $orange;
+    padding-top: 50px;
+    line-height: 2;
 }
 .hellow__slogan-text{
     font-size: 65px;
     color: $text;
     font-family: 'Lifehack';
+    line-height: 1;
+    width: 200px;
+    
+}
+.btn__last{
+
+    padding-top: 41px;
+
 }
 
 
