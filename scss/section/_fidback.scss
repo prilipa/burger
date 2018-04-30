@@ -1,0 +1,46 @@
+.fidback{
+   height:100%;
+   min-height: 650px;
+   background-color: $back;
+   
+
+}
+.user__fidback{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: center;
+    align-content: stretch;
+}
+.fid{
+    display: block;
+    position: absolute;
+    color: #ffffff;
+    opacity: 0;
+    padding: 18px;
+}
+.userpic:hover .fid{
+    opacity: 1;
+    transition: 2s;
+
+}
+.fid__head{
+    text-transform: uppercase;
+    font-family: 'Gagalin';
+    font-size: 14px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.fid__text{
+    font-family: Ubuntu;
+    color:#ffffff;
+    width: 222px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+}
+.userpic {
+    filter: grayscale(100%);
+}
+

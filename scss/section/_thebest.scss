@@ -1,0 +1,38 @@
+.thebest{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    height: 100vh;
+    min-height: 650px; 
+}
+
+.thebest__best{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title--thebest{
+    font-size: 72px;
+    font-family: 'Gagalin';
+    color: #2f3234;
+    padding-bottom: 55px;
+}
+.thebest__content{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;   
+}
+.thebest__contetnt--title{
+    font-family: 'Lifehack';
+    color: #2f3234;
+    font-size: 24px;
+    padding: 15px;
+}
+.thebest__content--text{
+    text-align: center;
+}
+.thebest_content--commit{
+    font-family: 'Ubuntu';
+}
