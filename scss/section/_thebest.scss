@@ -24,19 +24,22 @@
     display: flex;
     flex-direction: row;
     width: 1000px;
-    padding-bottom: 155px;   
+    padding-bottom: 155px;
+    &--text{
+        text-align: center;
+        
+    } 
+
 }
 .thebest__contetnt--title{
     
-    font-family: 'Lifehack';
-    color: #2f3234;
-    font-size: 24px;
-    padding: 15px;
-}
-.thebest__content--text{
-    text-align: center;
-    
-}
+        font-family: 'Lifehack';
+        color: #2f3234;
+        font-size: 24px;
+        padding: 25px
+        
+    }  
+
 .thebest__content--commit{
     font-family: 'Ubuntu';
     

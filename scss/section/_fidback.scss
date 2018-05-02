@@ -13,27 +13,32 @@
     align-content: stretch;
     margin: -6px;
 }
+//Блок с отзывам спрятан
 .fid{
     display: block;
     position: absolute;
     color: #ffffff;
     opacity: 0;
+    width: 100%;
     padding: 18px;
+}
+//По навадению на картинку он появляется
+.userpic:hover .fid{
+    opacity: .5;
+    transition: .3s;
+    background: rgb(13, 14, 14);
+    height: 100%;
 }
 .userpic {
     filter: grayscale(100%);
-    width: 25%;  
+    width: 25%;
+    position: relative;  
 }
 .userpic__img{
     width: 100%;
     margin: -3px;
-    
-}.userpic:hover .fid{
-    opacity: 1;
-    transition: 2s;
-    width: 100%;
-
 }
+
 .fid__head{
     text-transform: uppercase;
     font-family: 'Gagalin';
