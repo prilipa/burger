@@ -1,0 +1,54 @@
+.footer{
+    background: url(../img/bg-footer.png) center center / cover no-repeat;
+    height: 58px;
+
+}
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &--item{
+        align-self: flex-end;
+    }
+
+
+    
+}
+.footer__left{
+    
+}
+.footer__right{
+    
+    
+}
+.footer__text{
+    color: $link;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-style: normal;
+}
+.footer__tel{
+        color: #e45028;
+        
+    }
+.icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+        fill: #595959;
+        width: 25px;
+        height: 25px; }
+        .icon:hover {
+          fill: $link; }
+        .icon:first-child {
+          margin-left: 0; 
+}
+.tel{
+    text-decoration: none;
+    color: $btn;
+}
+      
+
+      
+

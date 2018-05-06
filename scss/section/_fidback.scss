@@ -1,7 +1,8 @@
 .fidback{
-   height:100%;
-   min-height: 650px;
+   height:100vh;
+   
    background-color: $back;
+   background-size: cover;
    
 
 }
@@ -11,16 +12,17 @@
     flex-wrap: wrap;  
     justify-content: center;
     align-content: stretch;
-    margin: -6px;
+    
 }
 //Блок с отзывам спрятан
 .fid{
     display: block;
     position: absolute;
-    color: #ffffff;
+    color: $link;
     opacity: 0;
     width: 100%;
     padding: 18px;
+    margin: -3px;
 }
 //По навадению на картинку он появляется
 .userpic:hover .fid{
