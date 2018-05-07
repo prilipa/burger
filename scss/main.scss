@@ -1,8 +1,9 @@
+@import "config/_mixins.scss";
 @import "config/_variables.scss";
 //Fotnts&variables
 @import "layout/_font.scss";
 @import "layout/_adjustment.scss";
-@import "config/_mixins.scss";
+
 
 @import "config/_base.scss";
 
@@ -16,3 +17,6 @@
 @import "section/_maps.scss";
 @import "section/_footer.scss";
 
+@function rem($px){
+    @return $px / 16px+0rem;
+}

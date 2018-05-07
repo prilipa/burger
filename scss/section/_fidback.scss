@@ -21,8 +21,8 @@
     color: $link;
     opacity: 0;
     width: 100%;
-    padding: 18px;
-    margin: -3px;
+    padding: rem(18px);
+    margin: rem(-3px);
 }
 //По навадению на картинку он появляется
 .userpic:hover .fid{
@@ -38,22 +38,22 @@
 }
 .userpic__img{
     width: 100%;
-    margin: -3px;
+    margin: rem(-3px);
 }
 
 .fid__head{
     text-transform: uppercase;
     font-family: 'Gagalin';
-    font-size: 14px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    font-size: rem(14px);
+    padding-top: rem(50px);
+    padding-bottom: rem(30px);
 }
 .fid__text{
     font-family: 'Ubuntu';
     color:#ffffff;
     width: 75%;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     text-align: left;
 }
 .fid__button--link{

@@ -1,14 +1,15 @@
 .footer{
     background: url(../img/bg-footer.png) center center / cover no-repeat;
-    height: 58px;
+    height: rem(58px);
 
 }
 .footer__content{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 100%;
     &--item{
-        align-self: flex-end;
+        align-self: center;
     }
 
 
@@ -23,7 +24,7 @@
 }
 .footer__text{
     color: $link;
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'Ubuntu';
     font-weight: 300;
     font-style: normal;
@@ -35,10 +36,10 @@
 .icon {
         display: inline-block;
         vertical-align: middle;
-        margin-left: 20px;
+        margin-left: rem(20px);
         fill: #595959;
-        width: 25px;
-        height: 25px; }
+        width: rem(25px);
+        height: rem(25px); }
         .icon:hover {
           fill: $link; }
         .icon:first-child {
