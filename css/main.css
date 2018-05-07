@@ -133,6 +133,15 @@
     width: 20px;
     height: 20px; }
 
+html {
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 13px; } }
+
 body {
   margin: 0;
   padding: 0;
@@ -156,8 +165,14 @@ ul {
 .hellow {
   background-image: url(../img/video-bg.png);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem; }
+  @media screen and (max-width: 768px) {
+    .hellow {
+      height: 100%; } }
+  @media screen and (max-width: 480px) {
+    .hellow {
+      height: 100%; } }
 
 .header {
   display: -webkit-box;
@@ -210,6 +225,8 @@ ul {
   text-decoration: none; }
   .nav__link:hover {
     text-decoration: underline; }
+  .nav__link.menubr {
+    text-decoration: none; }
 
 .nav__item::before {
   content: "\2022";
@@ -329,7 +346,7 @@ ul {
 .thebest {
   background-image: url(../img/bg.png);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   min-height: 650px; }
 
 .thebest__best {
@@ -337,7 +354,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -348,6 +365,9 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .thebest__best {
+      padding: 19px; } }
 
 .title--thebest {
   font-size: 72px;
@@ -363,23 +383,70 @@ ul {
   -ms-flex-direction: row;
   flex-direction: row;
   width: 70%;
-  padding-bottom: 155px; }
+  padding-bottom: 61px; }
+  @media screen and (max-width: 480px) {
+    .thebest__content {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .thebest__content--text {
-    text-align: center; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+    @media screen and (max-width: 480px) {
+      .thebest__content--text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        text-align: left; } }
 
 .thebest__contetnt--title {
   font-family: 'Lifehack';
   color: #2f3234;
   font-size: 24px;
   padding: 25px; }
+  @media screen and (max-width: 480px) {
+    .thebest__contetnt--title {
+      padding-left: 26px; } }
 
 .thebest__content--commit {
   font-family: 'Ubuntu'; }
+  @media screen and (max-width: 480px) {
+    .thebest__content--commit {
+      padding-left: 26px; } }
+
+@media screen and (max-width: 480px) {
+  .thebest__img {
+    padding-top: 10px;
+    width: 20%;
+    margin: 10px; } }
 
 .comand {
   background-image: url(../img/comand-bg.png);
   background-size: cover;
-  height: 100vh; }
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .comand {
+      height: 100%; } }
+  @media screen and (max-width: 480px) {
+    .comand {
+      height: 100%; } }
 
 .content {
   display: -webkit-box;
@@ -397,6 +464,13 @@ ul {
   height: 100%;
   padding-left: 97px;
   background: rgba(14, 13, 13, 0.8); }
+  @media screen and (max-width: 768px) {
+    .content__comand {
+      width: 100%;
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .content__comand {
+      width: 100%; } }
 
 .clss1 {
   width: 80%;
@@ -408,7 +482,6 @@ ul {
 .nav__link__com {
   text-decoration: none;
   font-family: 'Gagalin';
-  font-size: 14px;
   color: #ffff;
   margin-left: 15px; }
   .nav__link__com:before {
@@ -428,7 +501,6 @@ ul {
   text-decoration: none;
   color: #f9b43b;
   font-family: 'Gagalin';
-  font-size: 14px;
   padding-bottom: 12px;
   margin-left: 15px; }
   .activ--list:before {
@@ -441,6 +513,12 @@ ul {
     border-bottom-color: #f9b43b;
     border-top-width: 0px;
     margin-top: 5px; }
+    @media screen and (max-width: 768px) {
+      .activ--list:before {
+        margin-left: 140px; } }
+    @media screen and (max-width: 480px) {
+      .activ--list:before {
+        margin-left: 80px; } }
 
 .detali {
   height: 50px;
@@ -457,6 +535,24 @@ ul {
   padding: 17px 0 0 15px;
   height: 0;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .content__comand__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  @media screen and (max-width: 480px) {
+    .content__comand__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .content__comand__info.activ {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -467,6 +563,36 @@ ul {
     flex-direction: row;
     padding: 17px 0 0 15px;
     height: 100%; }
+    @media screen and (max-width: 768px) {
+      .content__comand__info.activ {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    @media screen and (max-width: 480px) {
+      .content__comand__info.activ {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
 
 .comand__info {
   font-family: 'Ubuntu';
@@ -474,6 +600,14 @@ ul {
   font-size: 14px;
   line-height: 24px;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .comand__info {
+      text-align: center;
+      padding-bottom: 34px; } }
+  @media screen and (max-width: 480px) {
+    .comand__info {
+      text-align: center;
+      padding-bottom: 34px; } }
   .comand__info__title {
     font-weight: 700; }
   .comand__info-content {
@@ -482,10 +616,14 @@ ul {
 
 .comand__info__pic {
   padding-right: 10px; }
-
-* {
-  margin: 0;
-  padding: 0; }
+  @media screen and (max-width: 768px) {
+    .comand__info__pic {
+      text-align: center;
+      padding-bottom: 24px; } }
+  @media screen and (max-width: 480px) {
+    .comand__info__pic {
+      text-align: center;
+      padding-bottom: 24px; } }
 
 .menuburg {
   background: url("../img/menu.png") center center/cover no-repeat;
@@ -508,14 +646,17 @@ ul {
 
 .menu__discription {
   height: 100%;
-  width: 100%;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg); }
 
 .title__br {
   font-size: 72px;
@@ -540,9 +681,15 @@ ul {
   position: relative;
   -ms-flex-line-pack: center;
   align-content: center;
-  width: 100%;
-  background: black;
-  color: #ffff; }
+  width: 62%;
+  height: 100%;
+  background: #2e2d2d;
+  opacity: 0.8;
+  margin-left: 75px;
+  color: #ffff;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg); }
 
 .order {
   background: url(../img/bg-order.png) center center no-repeat;

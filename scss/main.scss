@@ -17,6 +17,6 @@
 @import "section/_maps.scss";
 @import "section/_footer.scss";
 
-@function rem($px){
-    @return $px / 16px+0rem;
-}
+
+
+@import "config/_media.scss";

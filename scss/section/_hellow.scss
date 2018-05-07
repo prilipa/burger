@@ -1,8 +1,14 @@
 .hellow{
     background-image: url(../img/video-bg.png);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     min-height: rem(650px);
+    @include tablets{
+        height: 100%;
+    }
+    @include phone{
+        height: 100%;
+    }
 }
 .header{
     display: flex;
@@ -46,6 +52,10 @@
     text-decoration: none;
     &:hover{
         text-decoration:underline;
+    }
+    &.menubr{
+        text-decoration: none;
+
     }
 }
 .nav__item::before{
