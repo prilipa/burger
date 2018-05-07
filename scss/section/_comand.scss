@@ -1,7 +1,7 @@
 .comand{
     background-image: url(../img/comand-bg.png);
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     @include tablets{
         height: 100%;
     }
