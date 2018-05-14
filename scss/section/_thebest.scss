@@ -2,7 +2,7 @@
     background-image: url(../img/bg.png);
     background-size: cover;
     height: 100%;
-    min-height: 650px; 
+    min-height: rem(650px); 
 }
 
 .thebest__best{
@@ -13,12 +13,12 @@
     justify-content: center;
     align-items: center;
     @include phone{
-        padding: 19px;
+        padding: rem(19px);
         
     }
 }
 .title--thebest{
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: 'Gagalin';
     color: #2f3234;
     
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     width: 70%;
-    padding-bottom: 61px;
+    padding-bottom: rem(61px);
     
     @include phone{
         width: 100%;
@@ -56,10 +56,10 @@
     
         font-family: 'Lifehack';
         color: #2f3234;
-        font-size: 24px;
-        padding: 25px;
+        font-size: rem(24px);
+        padding: rem(25px);
         @include phone{
-            padding-left: 26px;
+            padding-left: rem(26px);
             
         }
         
@@ -68,16 +68,16 @@
 .thebest__content--commit{
     font-family: 'Ubuntu';
     @include phone{
-        padding-left: 26px;
+        padding-left: rem(26px);
         
     }
     
 }
 .thebest__img{
     @include phone{
-        padding-top: 10px;
+        padding-top: rem(10px);
         width: 20%;
-        margin:10px;
+        margin:rem(10px);
         
     }
 }

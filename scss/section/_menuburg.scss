@@ -9,8 +9,8 @@
 }
 .menu__title{
     width: 50%;
-    padding-top: 111px;
-    padding-left: 97px;
+    padding-top: rem(111px);
+    padding-left: rem(97px);
 }
 .menu__discription{
     height: 100%;
@@ -22,15 +22,15 @@
 	-o-transform: rotate(-90deg);
 }
 .title__br{
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: 'Gagalin';
     color: $link;
 }
 .title__br2{
-    font-size: 40px;
+    font-size: rem(40px);
     font-family: 'Gagalin';
     color: $link;
-    padding: 22px;
+    padding: rem(22px);
 }
 .menu__discription--item{
     background: url('../img/m_meet.png') center center / cover no-repeat;
@@ -49,7 +49,7 @@
     height: 100%;
     background: rgb(46, 45, 45);
     opacity: 0.8;
-    margin-left: 75px;
+    margin-left: rem(75px);
     color: $link;
     -moz-transform: rotate(0deg);
 	-webkit-transform: rotate(90deg);
