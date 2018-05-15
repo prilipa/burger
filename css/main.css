@@ -96,7 +96,13 @@
   display: block;
   position: fixed;
   top: 100px;
-  right: 120px; }
+  right: 10%; }
+  @media screen and (max-width: 768px) {
+    .pagin {
+      right: 20px; } }
+  @media screen and (max-width: 480px) {
+    .pagin {
+      height: 100%; } }
 
 .reset {
   background: none;
@@ -467,6 +473,16 @@ ul {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
+  @media screen and (max-width: 768px) {
+    .comand__nav--item {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .comand__nav--item {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .content {
   display: -webkit-box;

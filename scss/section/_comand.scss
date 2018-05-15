@@ -14,6 +14,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    @include tablets{
+        align-items: center
+    }
+    @include phone{
+        align-items: center;
+    }
 }
 .content{
     display: flex;
