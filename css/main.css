@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Lifehack';
   src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
@@ -74,6 +75,9 @@
   display: inline-block; }
   .fid__button:hover {
     background-color: black; }
+  @media screen and (max-width: 480px) {
+    .fid__button {
+      display: none; } }
 
 .container {
   display: -webkit-box;
@@ -287,7 +291,7 @@ ul {
   bottom: 0; }
 
 .fidback {
-  height: 100vh;
+  height: 100%;
   background-color: #000000;
   background-size: cover; }
 
@@ -315,6 +319,37 @@ ul {
   width: 100%;
   padding: 1.125rem;
   margin: -0.1875rem; }
+  @media screen and (max-width: 768px) {
+    .fid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .fid {
+      height: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .userpic:hover .fid {
   opacity: .5;
@@ -329,10 +364,16 @@ ul {
   filter: grayscale(100%);
   width: 25%;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .userpic {
+      width: 50%; } }
 
 .userpic__img {
   width: 100%;
   margin: -0.1875rem; }
+  @media screen and (max-width: 768px) {
+    .userpic__img {
+      width: 100%; } }
 
 .fid__head {
   text-transform: uppercase;
@@ -340,19 +381,58 @@ ul {
   font-size: 0.875rem;
   padding-top: 3.125rem;
   padding-bottom: 1.875rem; }
+  @media screen and (max-width: 768px) {
+    .fid__head {
+      padding-top: 1.875rem;
+      padding-bottom: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .fid__head {
+      padding-top: 0.625rem;
+      padding-bottom: 0.3125rem; } }
 
 .fid__text {
   font-family: 'Ubuntu';
   color: #ffffff;
-  width: 75%;
+  width: 100%;
   font-size: 0.875rem;
   line-height: 1.5rem;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .fid__text {
+      text-align: center;
+      width: 100%; } }
+  @media screen and (max-width: 480px) {
+    .fid__text {
+      height: 50%;
+      display: none; } }
 
 .fid__button--link {
   text-decoration: none;
   color: #ffff;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .fid__button--link {
+      display: none; } }
+
+.fid__button--phone {
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .fid__button--phone {
+      padding: 8px 8px;
+      margin-top: 20px;
+      background-color: #2f3234;
+      color: #ffff;
+      border-radius: 5px;
+      width: 115px;
+      height: 35px;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .fid__button--phone:hover {
+        background-color: black; } }
 
 .thebest {
   background-image: url(../img/bg.png);
@@ -780,6 +860,9 @@ ul {
   height: 100%; }
   @media screen and (max-width: 480px) {
     .order__content {
+      height: 100%; } }
+  @media screen and (max-width: 768px) {
+    .order__content {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -793,8 +876,6 @@ ul {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -ms-flex-line-pack: center;
-      align-content: center;
       height: 100%; } }
 
 textarea {
@@ -808,7 +889,8 @@ textarea {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 85%; }
+  width: 100%;
+  padding: 80px; }
   @media screen and (max-width: 480px) {
     .order__form {
       display: -webkit-box;
@@ -821,7 +903,11 @@ textarea {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      width: 100%; } }
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      padding: 0px; } }
   @media screen and (max-width: 768px) {
     .order__form {
       display: -webkit-box;
@@ -834,18 +920,42 @@ textarea {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      width: 100%; } }
+      width: 100%;
+      padding: 0px; } }
+
+.title__order {
+  font-size: 4.5rem;
+  font-family: 'Gagalin';
+  color: #f9b43b;
+  padding-top: 3.125rem;
+  line-height: 2; }
+  @media screen and (max-width: 480px) {
+    .title__order {
+      font-family: Gagalin;
+      color: #f9b43b;
+      font-size: 49.75px;
+      /* Приближение из-за подстановки шрифтов */
+      font-weight: 400;
+      line-height: 59.714px;
+      /* Приближение из-за подстановки шрифтов */
+      text-align: center;
+      -webkit-transform: scaleY(1.0069);
+      -ms-transform: scaleY(1.0069);
+      transform: scaleY(1.0069); } }
 
 .form__content {
   width: 50%; }
-  @media screen and (max-width: 480px) {
-    .form__content {
-      width: 100%; } }
   @media screen and (max-width: 768px) {
     .form__content {
-      padding-left: 50px;
-      padding-right: 50px;
-      width: 100%; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: auto;
+      width: 75%; } }
 
 .form__block-title {
   color: #ffff;
@@ -867,6 +977,18 @@ textarea {
   flex-direction: row;
   margin-bottom: 1.25rem;
   margin: 1.25rem 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .form__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .form__block {
   -webkit-box-flex: 1;
@@ -878,9 +1000,17 @@ textarea {
 
 .form__left {
   width: 50%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .form__left {
-      width: 100%; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: auto;
+      width: 75%; } }
 
 .form__coll {
   display: -webkit-box;
@@ -891,9 +1021,6 @@ textarea {
   -ms-flex-direction: row;
   flex-direction: row;
   padding-bottom: 1.5625rem; }
-  @media screen and (max-width: 480px) {
-    .form__coll {
-      text-align: center; } }
 
 .form__radio {
   margin-left: 1.25rem;
@@ -950,3 +1077,36 @@ textarea {
 .tel {
   text-decoration: none;
   color: #e45028; }
+
+.burg {
+  background: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -moz-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -o-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -ms-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
+  background: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  width: 100%;
+  height: 100vh; }
+
+.burg__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+.burg__discripion {
+  width: 50%; }

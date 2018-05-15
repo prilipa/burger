@@ -17,13 +17,16 @@
     align-content: center;
     height: 100%;
     @include phone{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
       height: 100%;
+      
    }  
+   @include tablets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }  
     
 }
 textarea{
@@ -32,30 +35,51 @@ textarea{
 .order__form{
   display: flex;
   flex-direction: row;
-  width: 85%;
+  width: 100%;
+  padding: 80px;
   @include phone{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: 100%
+   align-items: center;
+   width: 100%;
+   padding: 0px;
 }  
 @include tablets{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%
+  width:100%;
+  padding: 0px;
 }  
 }
+.title__order{
+  font-size: rem(72px);
+    font-family: 'Gagalin';
+    color: $orange;
+    padding-top: rem(50px);
+    line-height: 2;
+    @include phone{
+      font-family: Gagalin;
+color:  #f9b43b;
+font-size: 49.75px;/* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 59.714px;/* Приближение из-за подстановки шрифтов */
+text-align: center;
+transform: scaleY(1.0069);
+    }
+    
+}
+
 .form__content{
     width: 50%;
-    @include phone{
-      
-      width: 100%
-   }  
+  
    @include tablets{
-    padding-left: 50px; 
-    padding-right: 50px;
-    width: 100%
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+    width: 75%
  }  
 }
 .form__block-title {
@@ -75,6 +99,11 @@ textarea{
     flex-direction: row;
     margin-bottom: rem(20px);
     margin: rem(20px) rem(20px);
+    @include phone{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
 
   }
   
@@ -84,12 +113,23 @@ textarea{
     &:last-child{
       margin-right: 0;
     }
+    @include phone{
+
+    }
   }
 .form__left{
   width: 50%;
-  @include phone{
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     
-    width: 100%
+    width: 75%
+  }
+  @include phone{
+
+
+   
  }  
   
 }
@@ -98,7 +138,7 @@ textarea{
   flex-direction: row;
   padding-bottom: rem(25px);
   @include phone{
-    text-align: center;
+ 
  }  
 
 }

@@ -36,6 +36,9 @@
     &:hover{
         background-color: darken($btn,100%); 
     }
+    @include phone{
+        display: none;
+     }
 }
 .container{
     display: flex;

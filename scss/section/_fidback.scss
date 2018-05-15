@@ -1,9 +1,7 @@
 .fidback{
-   height:100vh;
-   
+   height:100%;
    background-color: $back;
    background-size: cover;
-   
 
 }
 .fidback__user{
@@ -21,8 +19,26 @@
     color: $link;
     opacity: 0;
     width: 100%;
+    
     padding: rem(18px);
     margin: rem(-3px);
+    @include tablets{
+    
+    display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center
+    
+    
+    }
+    @include phone{
+        height: 50%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center
+    }
+    
 }
 //По навадению на картинку он появляется
 .userpic:hover .fid{
@@ -34,11 +50,28 @@
 .userpic {
     filter: grayscale(100%);
     width: 25%;
+    
     position: relative;  
+    @include tablets{
+        width: 50%;
+        
+        
+      
+    }
+    @include phone{
+        
+    }
 }
 .userpic__img{
     width: 100%;
     margin: rem(-3px);
+    @include tablets{
+        width: 100%;
+      
+    }
+    @include phone{
+       
+    }
 }
 
 .fid__head{
@@ -47,19 +80,59 @@
     font-size: rem(14px);
     padding-top: rem(50px);
     padding-bottom: rem(30px);
+    @include tablets{
+        padding-top: rem(30px);
+    padding-bottom: rem(15px);
+    }
+    @include phone{
+        padding-top: rem(10px);
+    padding-bottom: rem(5px);
+    }
 }
 .fid__text{
     font-family: 'Ubuntu';
     color:#ffffff;
-    width: 75%;
+    width: 100%;
     font-size: rem(14px);
     line-height: rem(24px);
     text-align: left;
+    @include tablets{
+       text-align: center;
+       width: 100%;
+    }
+    @include phone{
+        height: 50%;
+        display: none;
+    }
 }
 .fid__button--link{
     text-decoration: none;
     color: $link;
     text-transform: uppercase;
+    @include phone{
+       display: none;
+    }
+}
+.fid__button--phone{
+    display: none;
+    @include phone{
+    padding: 8px 8px;
+    margin-top: 20px;
+    background-color:$bt;
+    color: $link;
+    border-radius: 5px;
+    width: 115px;
+    height: 35px;
+    transition: .5s;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover{
+        background-color: darken($btn,100%); 
+    }
+     }
+
+
 }
 
 
