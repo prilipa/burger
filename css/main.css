@@ -453,6 +453,21 @@ ul {
     .comand {
       height: 100%; } }
 
+.comand__nav--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,20 +500,31 @@ ul {
   padding-top: 7.0625rem; }
 
 .nav__link__com {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
   font-family: 'Gagalin';
   color: #ffff;
   margin-left: 0.9375rem; }
   .nav__link__com:before {
     content: "";
-    display: block;
-    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 0;
     height: 0;
     border: 0.3125rem solid transparent;
     border-top-color: #f9b43b;
     border-bottom-width: 0rem;
-    margin-top: 0.3125rem; }
+    margin-top: 0.3125rem;
+    margin-right: 0.625rem; }
   .nav__link__com.nav__link:hover {
     text-decoration: none; }
 
@@ -510,20 +536,33 @@ ul {
   margin-left: 0.9375rem; }
   .activ--list:before {
     content: "";
-    display: block;
-    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 0;
     height: 0;
     border: 0.3125rem solid transparent;
     border-bottom-color: #f9b43b;
     border-top-width: 0rem;
     margin-top: 0.3125rem; }
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
+    .activ--list {
+      text-decoration: none;
+      color: #f9b43b;
+      font-family: 'Gagalin'; }
       .activ--list:before {
-        margin-left: 8.75rem; } }
-    @media screen and (max-width: 480px) {
-      .activ--list:before {
-        margin-left: 5rem; } }
+        content: "";
+        width: 0;
+        height: 0;
+        border: 0.3125rem solid transparent;
+        border-bottom-color: #f9b43b;
+        border-top-width: 0rem; } }
 
 .detali {
   height: 3.125rem;
@@ -741,6 +780,9 @@ ul {
       -ms-flex-line-pack: center;
       align-content: center;
       height: 100%; } }
+
+textarea {
+  width: 100%; }
 
 .order__form {
   display: -webkit-box;
