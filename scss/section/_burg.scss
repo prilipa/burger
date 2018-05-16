@@ -12,9 +12,35 @@ height: 100vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 70px;
+    width: 100%;
     height: 100%;
     align-content: center;
+  
+
 }
 .burg__discripion{
-    width: 50%
+    width: 45%
 }
+.discription__title{
+    color: $link;
+    margin-bottom: 20px;
+    font-size: rem(72px);
+    font-family: 'Gagalin';
+    }
+.discription__price{
+        
+        margin-bottom: 20px;
+        font-size: rem(72px);
+        font-family: 'Gagalin';
+        color: $btn;
+    
+    
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+  }

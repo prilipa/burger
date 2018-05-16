@@ -1104,9 +1104,39 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 70px;
+  width: 100%;
   height: 100%;
   -ms-flex-line-pack: center;
   align-content: center; }
 
 .burg__discripion {
-  width: 50%; }
+  width: 45%; }
+
+.discription__title {
+  color: #ffff;
+  margin-bottom: 20px;
+  font-size: 4.5rem;
+  font-family: 'Gagalin'; }
+
+.discription__price {
+  margin-bottom: 20px;
+  font-size: 4.5rem;
+  font-family: 'Gagalin';
+  color: #e45028; }
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
